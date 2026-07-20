@@ -6,7 +6,10 @@ import sys
 url = "https://dev.to/api/articles?username=aniket_misra_e47d1564ab7b&per_page=3"
 
 try:
-    req = urllib.request.Request(url, headers={"Accept": "application/json"})
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (compatible; GitHub Actions readme-updater)"
+    })
     with urllib.request.urlopen(req, timeout=10) as r:
         articles = json.loads(r.read().decode())
 except Exception as e:
@@ -20,7 +23,7 @@ if not articles:
 lines = ["<!-- BLOG-POST-LIST:START -->"]
 for a in articles:
     date = a["published_at"][:10]
-    title = a["title"].replace("[", "(").replace("]", ")")  # escape markdown
+    title = a["title"].replace("[", "(").replace("]", ")")
     lines.append(f"- [{title}]({a['url']}) — `{date}`")
 lines.append("<!-- BLOG-POST-LIST:END -->")
 new_block = "\n".join(lines)
