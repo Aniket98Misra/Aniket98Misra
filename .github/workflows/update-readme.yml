@@ -18,41 +18,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Fetch and inject latest dev.to posts
-        run: |
-          python3 << 'PYEOF'
-          import urllib.request
-          import json
-          import re
-
-          url = "https://dev.to/api/articles?username=aniket_misra_e47d1564ab7b&per_page=3"
-          req = urllib.request.Request(url, headers={"Accept": "application/json"})
-          with urllib.request.urlopen(req, timeout=10) as r:
-              articles = json.loads(r.read().decode())
-
-          lines = ["<!-- BLOG-POST-LIST:START -->"]
-          for a in articles:
-              date = a["published_at"][:10]
-              lines.append(f"- [{a['title']}]({a['url']}) — `{date}`")
-          lines.append("<!-- BLOG-POST-LIST:END -->")
-          new_block = "\n".join(lines)
-
-          with open("README.md", "r") as f:
-              content = f.read()
-
-          updated = re.sub(
-              r"<!-- BLOG-POST-LIST:START -->.*?<!-- BLOG-POST-LIST:END -->",
-              new_block,
-              content,
-              flags=re.DOTALL,
-          )
-
-          with open("README.md", "w") as f:
-              f.write(updated)
-
-          print("done")
-          print(new_block)
-          PYEOF
+      - name: Update blog posts in README
+        run: python3 update_readme.py
 
       - name: Commit and push if changed
         run: |
