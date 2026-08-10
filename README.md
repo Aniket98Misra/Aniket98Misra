@@ -64,9 +64,9 @@ devops      Docker · AWS · Kubernetes · Vercel · GitHub Actions
 ## writing
 
 <!-- BLOG-POST-LIST:START -->
-- [Before Solana Went Native: What the EVM Actually Is (And Why It Was Built to Be Slow)](https://dev.to/aniket_misra_e47d1564ab7b/before-solana-went-native-what-the-evm-actually-is-and-why-it-was-built-to-be-slow-14h7) — `2026-07-13`
-- [Kill the Server: Why Holepunch Threw Away Node.js and Built 'Bare'](https://dev.to/aniket_misra_e47d1564ab7b/kill-the-server-why-holepunch-threw-away-nodejs-and-built-bare-3gdi) — `2026-07-11`
-- [The Dark Art of UDP Hole Punching: How to Build a Serverless Web](https://dev.to/aniket_misra_e47d1564ab7b/the-dark-art-of-udp-hole-punching-how-to-build-a-serverless-web-1p7d) — `2026-07-10`
+- [Escaping the Event Loop — A Deep Dive into worker_threads (Part 3/3)](https://dev.to/aniket_misra_e47d1564ab7b/escaping-the-event-loop-a-deep-dive-into-workerthreads-part-33-11oj) — `2026-08-04`
+- [Browser vs Node — Where the Event Loop Actually Diverges (Part 2/3)](https://dev.to/aniket_misra_e47d1564ab7b/browser-vs-node-where-the-event-loop-actually-diverges-part-23-3j6c) — `2026-08-04`
+- [The JS Event Loop — Core Mental Model (Part 1/3)](https://dev.to/aniket_misra_e47d1564ab7b/the-js-event-loop-core-mental-model-part-13-289i) — `2026-08-04`
 <!-- BLOG-POST-LIST:END -->
 
 *auto-updated weekly · full archive at [dev.to/aniket_misra](https://dev.to/aniket_misra_e47d1564ab7b)*
