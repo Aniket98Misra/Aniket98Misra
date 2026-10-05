@@ -64,9 +64,9 @@ devops      Docker · AWS · Kubernetes · Vercel · GitHub Actions
 ## writing
 
 <!-- BLOG-POST-LIST:START -->
+- [When Your Security Tool Says "LOOKS SAFE" (TxnLense, Part 2)](https://dev.to/aniket_misra_e47d1564ab7b/when-your-security-tool-says-looks-safe-txnlense-part-2-4pkg) — `2026-10-04`
+- [Intercepting a Wallet from a Browser Extension (TxnLense, Part 1)](https://dev.to/aniket_misra_e47d1564ab7b/intercepting-a-wallet-from-a-browser-extension-txnlense-part-1-52bg) — `2026-10-04`
 - [Escaping the Event Loop — A Deep Dive into worker_threads (Part 3/3)](https://dev.to/aniket_misra_e47d1564ab7b/escaping-the-event-loop-a-deep-dive-into-workerthreads-part-33-11oj) — `2026-08-04`
-- [Browser vs Node — Where the Event Loop Actually Diverges (Part 2/3)](https://dev.to/aniket_misra_e47d1564ab7b/browser-vs-node-where-the-event-loop-actually-diverges-part-23-3j6c) — `2026-08-04`
-- [The JS Event Loop — Core Mental Model (Part 1/3)](https://dev.to/aniket_misra_e47d1564ab7b/the-js-event-loop-core-mental-model-part-13-289i) — `2026-08-04`
 <!-- BLOG-POST-LIST:END -->
 
 *auto-updated weekly · full archive at [dev.to/aniket_misra](https://dev.to/aniket_misra_e47d1564ab7b)*
